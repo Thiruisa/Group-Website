@@ -1,2 +1,2 @@
 # Group-Website
-Gropu Website
+Group Website
