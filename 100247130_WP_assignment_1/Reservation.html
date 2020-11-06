@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Loch Reservation </title>
+	<link type="text/css" rel = "stylesheet" href = "style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+</head>
+<body>
+	<header>
+		<div class="menu">	
+			<a href="Index.html" class="logo"><img src="0Logo.png" alt="Logo"></a>
+			<a href="Reservation.html" class="active" >BOOK</a>
+			<div class="navigation">
+				<label for="toggle"> &#9776; </label>
+				<input type="checkbox" id="toggle"/>
+				<div class="main-nav">	
+					<ul>
+						<li><a href = "Index.html"> Home </a></li>
+						<li><a href = "Facilities.html"> Facilities </a></li> 
+						<li><a href = "CorporateBooking.html"> Corporate Booking </a></li>
+						<li><a href = "Reservation.html"> Reservation </a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>	
+	
+	<div class="hero-image">
+		<div class="container">		
+			<img src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt= "" class="img-h">
+		</div>
+		<div class="hero-text">
+			<h1> Reservation </h1>
+			<p> Wake up to the Loch views </p>
+		</div>
+	</div>	
+
+	<table class="room">
+	
+		<tr>
+		<th>Room Type</th>
+		<th>Price Per Night</th>
+		<th>Availability</th>
+		</tr>
+		<tr>
+		<td> Single Room </td>
+		<td> £90 </td>
+		<td> 5 Rooms Available </td>
+		</tr>
+		<tr>		
+		<td> Single Double Room </td>
+		<td> £110 </td>
+		<td> 3 Rooms Available </td>
+		</tr>
+		<tr>		
+		<td> Superior Room </td>
+		<td> £250 </td>
+		<td> 2 Rooms Available </td>
+		</tr>
+		<tr>		
+		<td> Deluxe Room </td>
+		<td> £300 </td>
+		<td> 1 Rooms Available </td>
+		</tr>
+		<tr>		
+		<td> Deluxe Room with Balcony </td>
+		<td> £400 </td>
+		<td> Unavailable </td>
+		</tr>
+		<tr>		
+		<td> Family Deluxe Room </td>
+		<td> £450 </td>
+		<td> Unavailable </td>
+		</tr>
+		
+	</table>
+
+	<table class="r-gallery">
+	
+		<tr>		
+			<td>	
+			<img src="https://images.pexels.com/photos/2747901/pexels-photo-2747901.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt= "" class="img-r">
+			<p class="image-text1"> Superior Room </p>		
+		</td>			
+			
+			<td>	
+			<img src="https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt= "" class="img-r">
+			<p class="image-text1"> Single Double Room </p>			
+			</td>
+	
+			<td>
+			<img src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt= "" class="img-r">
+			<p class="image-text1"> Family Deluxe Room </p>				
+			</td>
+			
+			<td>
+			<img src="https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt= "" class="img-r">
+			<p class="image-text1"> Deluxe Room with Balcony </p>				
+			</td>
+		
+		</tr>
+		
+	</table>
+	
+	<article class="rForm">
+		
+		<h2><strong>Reservation</strong></h2>
+		
+		<div class="row">
+			<div class="column">
+				<form action="/" method="post">
+					<label>Title</label> <br>
+					<select name="title" required> 
+						<option value="">...</option>
+						<option value="Miss">Miss</option>
+						<option value="Ms">Ms</option>
+						<option value="Mrs">Mrs</option>
+						<option value="Mr">Mr</option>
+					</select> <br>
+					
+					<table class="forms">
+						<tr>
+						<td>					
+							<label>First Name*</label> <br>
+							<input type="text" name="firstname" placeholder="First Name.." accesskey="F" required> <br>
+						</td>
+						<td>						
+							<label>Last Name*</label> <br>
+							<input type="text" name="lastname" placeholder="Last Name.." accesskey="L" required> <br>
+						</td>
+						</tr>
+					</table>	
+					<table class="forms">
+						<tr>
+						<td>					
+							<label>Email*</label> <br>
+							<input type="email" name="email" placeholder="E-mail Address.." accesskey="E" required> <br>
+						</td>
+						<td>							
+							<label>Phone Number*</label> <br>
+							<input type="number" name="number" placeholder="Phone Number" accesskey="P" required> <br>
+						</td>
+						</tr>
+					</table>
+					<table class="forms">
+						<tr>
+						<td>					
+							<label>Check-In*</label> <br>
+							<input type="date" name="calendar" accesskey="C" required> <br>
+						</td>
+						<td>							
+							<label>Check-Out*</label> <br>
+							<input type="date" name="calendar" accesskey="C" required> <br>
+						</td>
+						</tr>
+					</table>							
+					
+					<table class="forms">
+						<tr>
+						<td>					
+							<label>Adult</label> <br>
+							<select name="adult" required> 
+								<option value="">...</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select> <br>
+						</td>
+						<td>					
+							<label>Kids(13 and under)</label> <br>
+							<select name="kids" required> 
+								<option value="">...</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select> <br>
+						</td>
+						</tr>
+					</table>						
+					
+					<label>Room Type</label> <br>
+					<select name="room" required> 
+						<option value="">...</option>
+						<option value="singleRoom">Single Room</option>
+						<option value="singleDoubleRoom">Single Double Room</option>						
+						<option value="superiorRoom">Superior Room</option>
+						<option value="deluxeRoom">Deluxe Room</option>
+						<option value="deluxeLakeRoomWithBalcony">Deluxe Room with Balcony</option>
+						<option value="familyDeluxeRoom">Family Deluxe Room</option>
+					</select> <br>
+					
+					<button type="submit" onclick="alert('Form has been Submitted, you will recieve an email shortly')"> SUBMIT </button>					
+				</form>
+			</div>
+		</div>
+	</article>
+	
+	<div class="footer">
+		<p> 
+		<small><i>Copyright © 2019 The Loch Inn</i></small> 
+		 <a class = "footer-1">Privacy Policy</a>
+		 <a class = "footer-2">Terms of Services</a> 
+		 
+		 <a class = "footer-3">Last updated October 2019 </a>
+
+		<a href="mailto:someone@example.com"><img src="baseline_email_white_48dp.png" alt="email" class="contact"></a>
+		<a href="tel:01654298019"><img src="baseline_phone_white_48dp.png" alt="number" class="contact"></a>
+        <a href="https://www.instagram.com/lochnessinn/"><img src="iconfinder_-03_3057696.png" alt="instagram" class="socialmedia"></a>
+        <a href="https://www.facebook.com/lochnessinn.drumnadrochit/"><img src="iconfinder_-04_3057625.png" alt="facebook" class="socialmedia"></a>  </p>    
+	</div>
+		
+</body>
+</html>
