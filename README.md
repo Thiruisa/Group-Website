@@ -1,2 +1,2 @@
-# Website Year 1
+# Loch Inn Website
 
